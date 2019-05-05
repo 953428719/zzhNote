@@ -5,3 +5,4 @@ cat test.txt 展示文件中的内容
 git add test.txt 提交内容
 git commit -m "这里是描述信息"  上传
 git status 查看仓库状态
+clear 清理命令行的工作目录 
