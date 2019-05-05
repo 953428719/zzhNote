@@ -13,4 +13,12 @@ git reset HEAD tips.txt 把存储在暂存区的代码（也就是经过add 的代码）进行丢弃，
 （modified）的，需要进行工作区的清理工作。
 git checkout -- tips.txt  这样就完成了代码回滚的处理
 
+git log  查找出我们需要回滚到的节点位置的hash地址
+git reset --hard  复制hash地址到hard后面 如果我们的代码已经被commit，需要回
+  滚
+
+git rm tips.txt 可以在本地删除这个tips文件！但是在仓库和暂存区并未清理掉这个文
+  件。（不信可以git status看一下）最后还需要进行git commit -m "信息"来进行完整
+  的删除操作。
+
 第一天需求完成啦~~~
