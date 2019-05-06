@@ -39,7 +39,7 @@ ssh -T git@github.com 来看本地与github是否联通。
   Hi 953428719! You've successfully authenticated, but GitHub does not 
   provide shell access.）
 
-git remote add origin git@github.com:
+git remote add origin git@github.com:953428719/zzhNote.git
 
 git pull origin master --allow-unrelated-histories
 
@@ -47,5 +47,10 @@ git push -u origin master
 
 echo "# zzhNote" >> README.md  进入zzhNote文件夹，用这行代码来新建一个
     README.md文件
+
+git init  如果我们这个zzhNote文件夹并没有被初始化一个仓库就要用这行代码来完
+    成初始化的工作。
+
+
 
 
