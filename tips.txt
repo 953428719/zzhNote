@@ -12,6 +12,10 @@ git add test.txt 提交内容到暂时存储区域(使得代码的状态变成modified to be com
 
 git commit -m "这里是描述信息"   上传代码到仓库里，大家都能看到的
 
+git commit --amend  修改最近一次的commit 信息，然后就会进入vim编辑模式，
+  :wq  保存退出
+  i  进入编辑模式
+
 git status 查看仓库状态
 
 clear 清理命令行信息，不会看起来特别杂乱
