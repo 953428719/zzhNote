@@ -44,3 +44,8 @@ git remote add origin git@github.com:
 git pull origin master --allow-unrelated-histories
 
 git push -u origin master
+
+echo "# zzhNote" >> README.md  进入zzhNote文件夹，用这行代码来新建一个
+    README.md文件
+
+
