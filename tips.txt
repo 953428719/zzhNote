@@ -65,7 +65,7 @@ git clone git@github.com:953428719/zzhNote.git  用来克隆一份远程的仓库到本地；
     git tag name 创建标签
     git tag -a name -m “comment”指定提交信息
     git tag -d name 删除标签
-    git tag origin name 标签发布
+    git push origin name 标签发布
 
 new code
 
