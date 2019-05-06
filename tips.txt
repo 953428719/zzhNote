@@ -56,6 +56,13 @@ echo "# zzhNote" >> README.md  进入zzhNote文件夹，用这行代码来新建一个
 git init  如果我们这个zzhNote文件夹并没有被初始化一个仓库就要用这行代码来完
     成初始化的工作。
 
+git clone git@github.com:953428719/zzhNote.git  用来克隆一份远程的仓库到本地；
+    这个克隆操作已经把本地的分支和远程的分支互相关联，所以在接下来的推送本地到远
+    程的工作中，直接git push即可。
+
+
+
+
 
 
 
