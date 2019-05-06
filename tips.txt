@@ -60,6 +60,12 @@ git clone git@github.com:953428719/zzhNote.git  用来克隆一份远程的仓库到本地；
     这个克隆操作已经把本地的分支和远程的分支互相关联，所以在接下来的推送本地到远
     程的工作中，直接git push即可。
 
+版本的回滚通过标签来完成！
+    git tag 查看所有标签
+    git tag name 创建标签
+    git tag -a name -m “comment”指定提交信息
+    git tag -d name 删除标签
+    git tag origin name 标签发布
 
 
 
