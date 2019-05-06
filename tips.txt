@@ -1,19 +1,29 @@
 ls -a 显示所有文件，包括隐藏文件
+
 git init 初始化一个仓库
+
 echo "something" >> test.txt 代表追加双引号中的内容到test文件中
+
 cat test.txt 展示文件中的内容
+
 
 git add test.txt 提交内容到暂时存储区域(使得代码的状态变成modified to be com
   mited)，这一块区域是我们需要测试代码。
+
 git commit -m "这里是描述信息"   上传代码到仓库里，大家都能看到的
+
 git status 查看仓库状态
+
 clear 清理命令行信息，不会看起来特别杂乱
+
 git reset HEAD tips.txt 把存储在暂存区的代码（也就是经过add 的代码）进行丢弃，
   重新回到工作区。此时如果去git status一下，会发现，我们的tip.txt还是经过修改
 （modified）的，需要进行工作区的清理工作。
+
 git checkout -- tips.txt  这样就完成了代码回滚的处理
 
 git log  查找出我们需要回滚到的节点位置的hash地址
+
 git reset --hard  复制hash地址到hard后面 如果我们的代码已经被commit，需要回
   滚
 
@@ -21,4 +31,16 @@ git rm tips.txt 可以在本地删除这个tips文件！但是在仓库和暂存区并未清理掉这个文
   件。（不信可以git status看一下）最后还需要进行git commit -m "信息"来进行完整
   的删除操作。
 
-第一天需求完成啦~~~
+ssh-keygen -rsa -C "（注册github的邮箱）" 可以用这行代码来生成ssh的公钥和私钥
+  github上会用到的key其实是上面步骤中生成的公钥。
+
+ssh -T git@github.com 来看本地与github是否联通。
+（如果成功，git会返回
+  Hi 953428719! You've successfully authenticated, but GitHub does not 
+  provide shell access.）
+
+git remote add origin git@github.com:
+
+git pull origin master --allow-unrelated-histories
+
+git push -u origin master
