@@ -43,11 +43,12 @@ ssh -T git@github.com 来看本地与github是否联通。
   Hi 953428719! You've successfully authenticated, but GitHub does not 
   provide shell access.）
 
-git remote add origin git@github.com:953428719/zzhNote.git
+git remote add origin git@github.com:953428719/zzhNote.git 关联本地仓库和远
+    程仓库
 
-git pull origin master --allow-unrelated-histories
+git push -u origin master  远程数据库中推送本地的仓库
 
-git push -u origin master
+git push 就可以把文件推送到远程数据库
 
 echo "# zzhNote" >> README.md  进入zzhNote文件夹，用这行代码来新建一个
     README.md文件
