@@ -12,3 +12,14 @@ git branch 查看所有分支
 git checkout name 切换到name分支
 
 
+git checkout master
+git merge feature_1
+    如果要把分支合并到master上，需要先把当前分支切换到master上，然后再用merge
+    代码
+git merge --abort  如果和master上的内容有冲突，则需要进行撤销融合操作
+git branch -d feature_1删除一个分支feature_1
+new feature added...
+
+
+
+
